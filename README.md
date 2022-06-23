@@ -1,5 +1,5 @@
 # Hi Folks 🙋‍♂️
-# This is Caption Pikaboo Speaking....📢
+# This is Captain Pikaboo Speaking....📢
 
 - Welcome to another tiny little project of mine.<br/>
 - This is not very special but different shapes filled in a box container with only html and css.<br/>
