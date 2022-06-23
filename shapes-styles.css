@@ -1,0 +1,207 @@
+body {
+    background-color: #E1EEEF;
+}
+
+.container {
+    position: relative;
+    width: 45%;
+    height: 550px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F4F6F6;
+    box-shadow: 0 0 16px 6px #eee;
+    z-index: -1;
+}
+
+.red-circle {
+    position: absolute;
+    top: 10%;
+    left: 68%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 14px 2px rgba(255, 0, 0, 0.563);
+}
+
+.orange-circle {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(246, 246, 16);
+    /* box-shadow: 0 0 14px 2px rgba(255, 166, 0, 0.653); */
+    box-shadow: 0 0 24px 12px rgba(255, 255, 0, 0.46);
+}
+
+.blue-square {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 15px;
+    left: 20px;
+    transform: rotate(45deg);
+    background-color: blue;
+    box-shadow: 0 0 14px 7px rgba(0, 0, 255, 0.637);
+}
+
+.green-triangle1,
+.green-triangle2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: -5px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid lime;
+    transform: rotate(145deg);
+}
+
+.green-triangle2 {
+    top: 65%;
+    left: 65%;
+    transform: rotate(-45deg);
+}
+
+.purple-pentagon {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: rgb(221, 59, 221) transparent;
+}
+
+.purple-pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent rgb(221, 59, 221);
+}
+
+.diamond {
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    border-style: solid;
+    border-color: transparent transparent #6FF7FF transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 20px 0 50px 0;
+    transform: rotate(35deg);
+}
+
+.diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #6FF7FF transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+.heart {
+    position: relative;
+    top: 32%;
+    left: 85%;
+    width: 100px;
+    height: 90px;
+    transform: rotate(-140deg);
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: deeppink;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.star {
+    margin: 50px 0;
+    position: relative;
+    left: 35%;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(246, 246, 16);
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star:before {
+    border-bottom: 80px solid rgb(246, 246, 16);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    position: absolute;
+    display: block;
+    color: rgb(246, 246, 16);
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(246, 246, 16);
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+    font-size: 3rem;
+    color: #888;
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: 0 0 28px 18px rgba(255, 255, 255, 0.64);
+    z-index: 10;
+}
